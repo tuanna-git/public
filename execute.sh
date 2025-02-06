@@ -5,7 +5,7 @@ files=(*.sh.enc)
 
 # Check if there are any encrypted scripts
 if [ ${#files[@]} -eq 0 ]; then
-    echo "❌ No encrypted .sh.enc files found!"
+    echo "No encrypted .sh.enc files found!"
     exit 1
 fi
 
@@ -20,7 +20,7 @@ read -p "Enter the number of the script to run: " choice
 
 # Validate input
 if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt "${#files[@]}" ]; then
-    echo "❌ Invalid choice. Exiting."
+    echo "Invalid choice. Exiting."
     exit 1
 fi
 
