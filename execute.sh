@@ -10,7 +10,7 @@ if [ ${#files[@]} -eq 0 ]; then
 fi
 
 # Display available encrypted scripts
-echo "🔒 Available encrypted scripts:"
+echo "Available encrypted scripts:"
 for i in "${!files[@]}"; do
     echo "$((i+1)). ${files[i]}"
 done
