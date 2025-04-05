@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Ask for which file
+#read -p "Which file: "  FILE_NAME
+
 # Ask for password securely
 read -s -p "Enter decryption password: " SCRIPT_PASS
 echo
